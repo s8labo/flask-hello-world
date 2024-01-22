@@ -1,2 +1,4 @@
 Flask
 Gunicorn
+requests
+cloudmersive_barcode_api_client
