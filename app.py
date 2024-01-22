@@ -9,9 +9,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/test')
-def hello_world():
-    return 'Test!'
+# @app.route('/test')
+# def hello_world():
+#     return 'Test!'
 
 # setup cloudmersive apis
 API_KEY = '17d27b8b-e23d-42bd-92f0-69235984761f'
