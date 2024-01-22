@@ -9,13 +9,17 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
+@app.route('/test')
+def hello_world():
+    return 'Test!'
+
 # setup cloudmersive apis
 API_KEY = '17d27b8b-e23d-42bd-92f0-69235984761f'
 config_barcode = cloudmersive_barcode_api_client.Configuration()
 config_barcode.api_key['Apikey'] = API_KEY
 api_instance_barcode = cloudmersive_barcode_api_client.BarcodeScanApi(cloudmersive_barcode_api_client.ApiClient(config_barcode))
 
-@app.route("/cloudmersive/pzn", methods=["POST"])
+@app.route("/pzn", methods=["POST"])
 def call_cloudmersive_barcode_api():
 
     try:
