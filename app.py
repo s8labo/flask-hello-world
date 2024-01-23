@@ -48,6 +48,7 @@ def call_cloudmersive_barcode_api():
         # Handle exceptions
         # app.logger.error(f"An error occurred: {e}")
         # return "Internal Server Error", 500
-        return f"Internal Server Error: {e}, Image {image_url}, Tmp Path {tmp_file_path}, Image Data {image_data}", 500 
+        # return f"Internal Server Error: {e}, Image {image_url}, Tmp Path {tmp_file_path}, Image Data {image_data}", 500 
+        return "False"
 
     return pzn
